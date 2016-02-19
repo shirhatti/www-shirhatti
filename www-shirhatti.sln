@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{045E83C0-477D-4FD6-8C0A-50CC9343C4DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C0D50E6-7A7C-4BC0-A399-806CE047C769}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "www-shirhatti", "src\www-shirhatti\www-shirhatti.xproj", "{1C3C88FD-A9B9-4D00-B615-D752A07799B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3C88FD-A9B9-4D00-B615-D752A07799B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3C88FD-A9B9-4D00-B615-D752A07799B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3C88FD-A9B9-4D00-B615-D752A07799B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3C88FD-A9B9-4D00-B615-D752A07799B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C3C88FD-A9B9-4D00-B615-D752A07799B3} = {045E83C0-477D-4FD6-8C0A-50CC9343C4DF}
+	EndGlobalSection
+EndGlobal

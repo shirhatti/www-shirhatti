@@ -210,3 +210,14 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# ASP.NET
+artifacts/
+PublishProfiles/
+debugSettings.json
+project.lock.json
+node_modules/
+src/*/wwwroot/lib/
+*.min.js
+*.min.css
+/.vs/
