@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -61,6 +62,15 @@ namespace www_shirhatti
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
+
+            app.Use((context, next) =>
+            {
+                if (context.Request.Path.StartsWithSegments("/keepalive"))
+                {
+                    return context.Response.WriteAsync("Keep Alive");
+                }
+                return next();
+            });
 
             app.UseMvc();
         }
